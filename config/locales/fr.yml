@@ -1,0 +1,101 @@
+fr:
+  link:
+    home: "Accueil"
+    reservation: "Réservation"
+    menu: "Carte"
+    catering: "Traiteur"
+    contact: "Info"
+  s1:
+    subtitle: "RESTAURANT THAILANDAIS"
+    btn: "Réserver"
+  s2:
+    welcome: "Bienvenue"
+    part1: "Située au cœur du vieux bourg d’Onex, la Table des Artisans vous accueille dans un lieu élégant et pittoresque."
+    part2: "Nous vous offrons une escapade authentique dans le monde gourmand et savoureux de la Cuisine Traditionnelle thaïlandaise. Une délicieuse et fabuleuse expérience à partager avec vos amis, en famille, vos clients ou vos collaborateurs."
+    part3: "La Table des Artisans vous reçoit ou se déplace pour vos prochains événements privés ou professionnels. Nous vous proposons la privatisation du restaurant qui pourra accueillir aisément jusqu’à 40 convives. Pour vos évènements à l’extérieur du restaurant, nous vous présentons notre boutique traiteur : "
+    part4: "Pour plus d’information sur ces prestations, n’hésitez pas à nous contacter: "
+  s3:
+    title: "Notre carte"
+    subtitle: "Tous nos plats sont disponibles à emporter avec une remise de 10%."
+    subtitlebis: "Tous les midis, nous proposons un menu du jour à 18 Frs"
+    pills:
+      starter: "Entrées"
+      main: "Plats"
+      noodle: "Nouilles"
+      dessert: "Desserts"
+    menu:
+      starter1: "Brochettes de poulet au Satay"
+      starter2: "Raviolis frits aux crevettes et poulet"
+      starter3: "Rouleaux de printemps végétarien"
+      starter4: "Raviolis à la vapeur aux crevettes et poulet"
+      starter5: "Beignets de crevettes"
+      starter6: "Assortiment d'entrées (pour 2 pers.)"
+      soup1: "Soupe Tom-Yam épicée aux crevettes et à la citronnelle"
+      soup2: "Soupe Tom-Kha épicée au poulet et lait de coco"
+      soup3: "Soupe Tom-Kha au champignons et lait de coco"
+      salad1: "Salade épicée de boeuf"
+      salad2: "Salade épicée de poulet émincé"
+      salad3: "Salade épicée de papaye façon Som Tam Thaï"
+
+      main1: "Poulet ou porc au curry rouge"
+      main2: "Poulet ou porc au curry Panang"
+      main3: "Poulet ou porc au curry vert"
+      main4: "Poulet ou porc sauté aux piments frais et au basilic"
+      main5: "Poulet ou porc à l'aigre douce"
+      main6: "Poulet ou porc sauté au gingembre et champignons"
+      main7: "Poulet ou porc sauté aux noix de cajou et oignons"
+      main8: "Poulet ou porc sauté à l'ail et poivre"
+
+      main9: "Canard au curry rouge et ananas"
+      main10: "Canard sauté au poivre noir"
+      main11: "Canard sauté au gingembre et champignons"
+      main12: "Boeuf au curry rouge"
+      main13: "Boeuf au curry Panang"
+      main14: "Boeuf au curry vert"
+      main15: "Boeuf sauté à la sauce d'huitre et aux champignons"
+      main16: "Boeuf sauté à l'ail et poivre"
+      main17: "Boeuf sauté aux piments frais et au basilic"
+
+      main18: "Poisson ou crevettes au curry rouge"
+      main19: "Poisson ou crevettes au curry vert"
+      main20: "Crevettes sautées à la sauce aigre douce"
+      main21: "Crevettes sautées au curry jaune"
+      main22: "Crevettes sautées à l'ail et au poivre"
+
+      noodle1: "Nouilles de riz sautées aux crevettes ou poulet Pad Thaï"
+      noodle2: "Nouilles de riz sautées au boeuf ou porc ou poulet Pad Sea Ew"
+      noodle3: "Sauté de légumes mixtes à la sauce d'huitre"
+      noodle4: "Riz sauté au poulet ou porc ou crevettes"
+      noodle5: "Riz sauté au poulet ou porc aux piments frais et basilic"
+      noodle6: "Riz blanc"
+      noodle7: "Riz sauté à l'ail et ciboulette"
+      noodle8: "Nouilles de riz à l'ail et ciboulette"
+
+      dessert1: "Demie mangue thaïlandaise"
+      dessert2: "Demie mangue thaïlandaise avec riz gluand"
+      dessert3: "Ananas confit au Cointreau, glace au choix"
+      dessert4: "Salade de fruits exotiques"
+      dessert5: "Flan au marrons au lait de coco"
+      dessert6: "Glace ou sorbet au choix (par boule)"
+      btn: "Réserver une table"
+  s4:
+    info:
+      title: "Contactez nous"
+      window1: "CONTACT INFO"
+      window2: "HORAIRES D'OUVERTURE"
+      week1: "Lundi - Vendredi"
+      week2: "Mardi - Samedi"
+  s5:
+    gallery:
+      title: "Notre gallerie"
+  reservation:
+    create:
+      greeting: "Merci pour votre reservation !"
+      subtitle: "Une confirmation vous sera envoyée par email prochainement."
+    new:
+      title: "Réservation en ligne"
+      subtitle1: "Afin de réserver une table pour aujourd'hui,"
+      subtitle2: "veuillez contacter le restaurant au +41.22.792.19.00"
+
+
+
