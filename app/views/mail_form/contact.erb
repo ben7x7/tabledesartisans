@@ -1,0 +1,16 @@
+<h4 style="text-decoration:underline"><%= message.subject %></h4>
+
+<% @resource.mail_form_attributes.each do |attribute, value|
+  next if value.blank? %>
+
+  <p><b><%= @resource.class.human_attribute_name(attribute) %>:</b>
+  <%= case value
+    when /\n/
+      raw(simple_format(h(value)))
+    when Time, DateTime, Date
+      I18n.l(value)
+    else
+      value
+    end
+  %></p>
+<% end %>contact.erb

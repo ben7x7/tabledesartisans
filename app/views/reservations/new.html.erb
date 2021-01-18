@@ -1,0 +1,98 @@
+<div class="wrapper-reservation-new">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="title-header text-center">
+          <h2><%= t('reservation.new.title') %></h2>
+        </div>
+        <br>
+        <div class="title-subheader text-center text-muted">
+          <p id="title-subheader">
+            <%= t('reservation.new.subtitle1') %> <br>
+            <%= t('reservation.new.subtitle2') %>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-8">
+        <div class="reservation-form my-2">
+          <%= form_for @reservation do |f| %>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :name, class: "sr-only" %>
+                  <%= f.text_field :name, placeholder: "Entrer votre nom", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :email, class: "sr-only" %>
+                  <%= f.email_field :email, placeholder: "Email", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-at"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :phone, class: "sr-only" %>
+                  <%= f.text_field :phone, placeholder: "Numéro de téléphone", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <%= f.label :pax, class: "sr-only" %>
+                  <%= f.text_field :pax, placeholder: "Combien de personnes ?", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :date, class: "sr-only" %>
+                  <%= f.date_field :date, format: "%a %e %b %Y", required: true %>
+                  <div class="icone-input-end">
+                    <i class="far fa-calendar-check"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :time, class: "sr-only" %>
+                  <%= f.time_field :time, required: true %>
+                  <div class="icone-input-end">
+                    <i class="far fa-clock"></i>
+                  </div>
+                </div>
+                <br>
+                <div class="hidden">
+                  <%= f.label :nickname %>
+                  <%= f.text_field :nickname, hint: 'Leave it blank' %>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <%= f.label :message, class: "sr-only" %>
+                  <%= f.text_field :message, placeholder: "message...", required: false %>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="text-center">
+                  <%= f.submit 'Réserve une table', class: "button-reservation disabled" %>
+                  <br>
+                  <br>
+                  <a class="home-link" href="/"><%= t('link.home') %></a>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
