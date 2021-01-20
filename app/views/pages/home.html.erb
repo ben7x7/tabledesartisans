@@ -1,2 +1,609 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-section">
+  <div class="home-content">
+    <div class="logos">
+      <div class="logo-img">
+        <%= image_tag 'logo-white.png' %>
+      </div>
+      <div class="logo-title">
+        <%= image_tag 'title.png' %>
+      </div>
+    </div>
+    <div class="subtitle d-flex flex-column justify-content-center mb-2">
+      <div class="text-center">
+        <h3 id="subtitle-up"><%= t('s1.subtitle') %></h3>
+      </div>
+      <div class="home-link mt-3 text-center">
+        <%= link_to t('s1.btn'), new_reservation_path, class: "btn-reservation-home btn-white" %>
+      </div>
+    </div>
+    <div class="resto-info">
+      <div class="address d-flex flex-row">
+        <i class="fas fa-map-marker-alt"></i><p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
+      </div>
+      <div class="phone d-flex flex-row">
+        <i class="fas fa-phone"></i><p>+41.22.792.19.00</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="img-separator">
+  <%= image_tag 'bangkok.png' %>
+</div>
+
+<div class="welcome-section">
+  <div class="wrapper-section">
+    <p id="welcome"><%= t('s2.welcome') %></p>
+    <br>
+    <p><%= t('s2.part1') %></p>
+    <p><%= t('s2.part2') %></p>
+    <p><%= t('s2.part3') %></p>
+    <p>
+      <%= t('s2.part4') %>
+      <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="mail-contact" href="mailto:contact@tabledesartisans.ch">contact@tabledesartisans.ch</a>.
+    </p>
+
+  </div>
+</div>
+
+<div class="img-separator">
+  <%= image_tag 'salle-width.png' %>
+</div>
+
+<div class="menu-section">
+  <div class="wrapper-menu">
+    <div class="title-section text-center">
+      <h2><%= t('s3.title') %></h2>
+    </div>
+    <div class="subtitle-section text-center text-muted">
+      <p class="title-subheader">
+        <%= t('s3.subtitle') %>
+        <br>
+        <%= t('s3.subtitlebis') %>
+      </p>
+    </div>
+    <div class="my-menu">
+      <ul class="nav nav-pills justify-content-center mt-2 mb-5" id="pills-tab" role="tablist">
+
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-entrees-tab" data-toggle="pill" href="#pills-entrees" role="tab" aria-controls="pills-entrees" aria-selected="true">
+            <%= t('s3.pills.starter') %>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" id="pills-plats-tab" data-toggle="pill" href="#pills-plats" role="tab" aria-controls="pills-plats" aria-selected="false">
+            <%= t('s3.pills.main') %>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" id="pills-accompagnements-tab" data-toggle="pill" href="#pills-accompagnements" role="tab" aria-controls="pills-accompagnements" aria-selected="false">
+            <%= t('s3.pills.noodle') %>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-desserts" aria-selected="false">
+            <%= t('s3.pills.dessert') %>
+          </a>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
+          <div class="menu-grid">
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.starter1') %></p>
+              </div>
+              <div class="card-price">
+                <strong>10 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.starter2') %></p>
+              </div>
+              <div class="card-price">
+                <strong>10 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.starter3') %></p>
+              </div>
+              <div class="card-price">
+                <strong>8 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.starter4') %></p>
+              </div>
+              <div class="card-price">
+                <strong>10 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.starter5') %></p>
+              </div>
+              <div class="card-price">
+                <strong>10 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.starter6') %></p>
+              </div>
+              <div class="card-price">
+                <strong>23 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.soup1') %></p>
+              </div>
+              <div class="card-price">
+                <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.soup2') %></p>
+              </div>
+              <div class="card-price">
+                <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.soup3') %></p>
+              </div>
+              <div class="card-price">
+                <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.salad1') %></p>
+              </div>
+              <div class="card-price">
+                <small>entrée: </small><strong>14 Frs</strong><small>  plat: </small><strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.salad2') %></p>
+              </div>
+              <div class="card-price">
+                <small>entrée: </small><strong>14 Frs</strong><small>  plat: </small><strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.salad3') %></p>
+              </div>
+              <div class="card-price">
+                <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-plats" role="tabpanel" aria-labelledby="pills-plats-tab">
+          <div class="menu-grid">
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main1') %></p>
+              </div>
+              <div class="card-price">
+                <strong>26 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main2') %></p>
+              </div>
+              <div class="card-price">
+                <strong>26 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main3') %></p>
+              </div>
+              <div class="card-price">
+                <strong>26 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main4') %></p>
+              </div>
+              <div class="card-price">
+                <strong>25 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main5') %></p>
+              </div>
+              <div class="card-price">
+                <strong>25 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main6') %></p>
+              </div>
+              <div class="card-price">
+                <strong>25 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main7') %></p>
+              </div>
+              <div class="card-price">
+                <strong>25 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main8') %></p>
+              </div>
+              <div class="card-price">
+                <strong>25 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main9') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main10') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main11') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main12') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main13') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main14') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main15') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main16') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main17') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main18') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main19') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main20') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main21') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.main22') %></p>
+              </div>
+              <div class="card-price">
+                <strong>27 Frs</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-accompagnements" role="tabpanel" aria-labelledby="pills-accompagnements-tab">
+          <div class="menu-grid">
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle1') %></p>
+              </div>
+              <div class="card-price">
+                <strong>28 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle2') %></p>
+              </div>
+              <div class="card-price">
+                <strong>26 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle3') %></p>
+              </div>
+              <div class="card-price">
+                <small>small: </small><strong>8 Frs</strong><small>  large: </small><strong>16 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle4') %></p>
+              </div>
+              <div class="card-price">
+                <strong>26 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle5') %></p>
+              </div>
+              <div class="card-price">
+                <strong>26 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle6') %></p>
+              </div>
+              <div class="card-price">
+                <strong>3 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle7') %></p>
+              </div>
+              <div class="card-price">
+                <strong>5 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.noodle8') %></p>
+              </div>
+              <div class="card-price">
+                <strong>6 Frs</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
+          <div class="menu-grid">
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.dessert1') %></p>
+              </div>
+              <div class="card-price">
+                <strong>9 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.dessert2') %></p>
+              </div>
+              <div class="card-price">
+                <strong>12 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.dessert3') %></p>
+              </div>
+              <div class="card-price">
+                <strong>8 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.dessert4') %></p>
+              </div>
+              <div class="card-price">
+                <strong>8 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.dessert5') %></p>
+              </div>
+              <div class="card-price">
+                <strong>7 Frs</strong>
+              </div>
+            </div>
+
+            <div class="card-menu">
+              <div class="card-content">
+                <p><%= t('s3.menu.dessert6') %></p>
+              </div>
+              <div class="card-price">
+                <strong>3.50 Frs</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reservation-link text-center">
+      <%= link_to t('s3.menu.btn'), new_reservation_path, class: "btn-reservation-home btn-white" %>
+    </div>
+  </div>
+</div>
+
+<div class="img-separator">
+  <%= image_tag 'coast.png' %>
+</div>
+
+<div class="contact-section">
+  <div class="row mt-5">
+    <div class=" col-sm-12 col-md-6 justify-content-center">
+      <div class="info-window">
+
+        <div class="window-title text-center">
+          <h2><%= t('s4.info.title') %></h2>
+        </div>
+
+        <div class="info-contact">
+          <div class="address d-flex flex-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
+          </div>
+          <div class="phone d-flex flex-row">
+            <i class="fas fa-phone"></i>
+            <p>+41.22.792.19.00</p>
+          </div>
+          <div class="mail d-flex flex-row">
+            <i class="far fa-envelope"></i>
+            <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="mail-contact" href="mailto:contact@tabledesartisans.ch">contact@tabledesartisans.ch</a>
+          </div>
+        </div>
+
+        <div class="info-opening">
+          <ul>
+            <li class="list-item d-flex justify-content-between mb-1">
+              <p><%= t('s4.info.week1') %></p>
+              <p>12H - 14H30</p>
+            </li>
+            <li class="list-item d-flex justify-content-between mb-5">
+              <p><%= t('s4.info.week2') %></p>
+              <p>19H - 23H</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class=" col-sm-12 col-md-6 justify-content-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.429257521167!2d6.097866650945921!3d46.182015993177515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0805a3879d47302!2sLa+Table+des+Artisans+-+Restaurant+Tha%C3%AF!5e0!3m2!1sfr!2sfr!4v1554471937689!5m2!1sfr!2sfr" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-section">
+  <div class="wrapper-gallery">
+    <div class="title-section text-center">
+
+    </div>
+    <div class="gallery-grid">
+
+    </div>
+  </div>
+</div>
