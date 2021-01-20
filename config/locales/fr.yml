@@ -1,10 +1,10 @@
 fr:
   link:
-    home: "Accueil"
-    reservation: "Réservation"
-    menu: "Carte"
+    home: "ACCUEIL"
+    reservation: "RESERVATION"
+    menu: "CARTE"
     catering: "Traiteur"
-    contact: "Info"
+    contact: "INFO"
   s1:
     subtitle: "RESTAURANT THAILANDAIS"
     btn: "Réserver"

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     get 'cookies',          to: 'pages#cookies',            as: :cookies
     get 'mentions',         to: 'pages#mentions',           as: :mentions
     get 'confidentialite',  to: 'pages#confidentialite',    as: :confidentialite
+    resources :reservations, only: [:new, :create]
   end
 end

@@ -1,6 +1,7 @@
 .navbar-thai {
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background-color: white;
 }
 
 .navbar-thai .navbar-collapse {
@@ -8,5 +9,5 @@
 }
 
 .navbar-thai .navbar-brand img {
-  width: 40px;
+  height: 40px;
 }
