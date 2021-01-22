@@ -1,6 +1,6 @@
 <div class="home-section">
   <div class="home-content">
-    <div class="logos">
+    <div class="logos text-center">
       <div class="logo-img">
         <%= image_tag 'logo-white.png' %>
       </div>
@@ -8,32 +8,32 @@
         <%= image_tag 'title.png' %>
       </div>
     </div>
-    <div class="subtitle d-flex flex-column justify-content-center mb-2">
+    <div class="subtitle d-flex flex-column justify-content-center">
       <div class="text-center">
         <h3 id="subtitle-up"><%= t('s1.subtitle') %></h3>
       </div>
-      <div class="home-link mt-3 text-center">
-        <%= link_to t('s1.btn'), new_reservation_path, class: "btn-reservation-home btn-white" %>
+      <div class="home-link mt-5 text-center">
+        <%= link_to t('s1.btn'), new_reservation_path, class: "btn-reservation-home" %>
       </div>
-    </div>
-    <div class="resto-info">
-      <div class="address d-flex flex-row">
-        <i class="fas fa-map-marker-alt"></i><p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
-      </div>
-      <div class="phone d-flex flex-row">
-        <i class="fas fa-phone"></i><p>+41.22.792.19.00</p>
+      <div class="resto-info mt-3">
+        <div class="address d-flex flex-row justify-content-center">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
+        </div>
+        <div class="phone d-flex flex-row justify-content-center">
+          <i class="fas fa-phone"></i>
+          <p>+41.22.792.19.00</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 <div class="img-separator">
   <%= image_tag 'bangkok.png' %>
 </div>
-
 <div class="welcome-section">
   <div class="wrapper-section">
-    <p id="welcome"><%= t('s2.welcome') %></p>
+    <h3 id="welcome"><%= t('s2.welcome') %></h3>
     <br>
     <p><%= t('s2.part1') %></p>
     <p><%= t('s2.part2') %></p>
@@ -42,15 +42,12 @@
       <%= t('s2.part4') %>
       <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="mail-contact" href="mailto:contact@tabledesartisans.ch">contact@tabledesartisans.ch</a>.
     </p>
-
   </div>
 </div>
-
 <div class="img-separator">
   <%= image_tag 'salle-width.png' %>
 </div>
-
-<div class="menu-section">
+<div class="menu-section" id="menu">
   <div class="wrapper-menu">
     <div class="title-section text-center">
       <h2><%= t('s3.title') %></h2>
@@ -62,33 +59,28 @@
         <%= t('s3.subtitlebis') %>
       </p>
     </div>
-    <div class="my-menu">
-      <ul class="nav nav-pills justify-content-center mt-2 mb-5" id="pills-tab" role="tablist">
-
+    <div class="my-menu mt-3">
+      <ul class="nav nav-pills justify-content-center mt-5 mb-5" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-entrees-tab" data-toggle="pill" href="#pills-entrees" role="tab" aria-controls="pills-entrees" aria-selected="true">
             <%= t('s3.pills.starter') %>
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" id="pills-plats-tab" data-toggle="pill" href="#pills-plats" role="tab" aria-controls="pills-plats" aria-selected="false">
             <%= t('s3.pills.main') %>
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" id="pills-accompagnements-tab" data-toggle="pill" href="#pills-accompagnements" role="tab" aria-controls="pills-accompagnements" aria-selected="false">
             <%= t('s3.pills.noodle') %>
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" id="pills-desserts-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-desserts" aria-selected="false">
             <%= t('s3.pills.dessert') %>
           </a>
         </li>
-
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
@@ -101,7 +93,6 @@
                 <strong>10 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.starter2') %></p>
@@ -110,7 +101,6 @@
                 <strong>10 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.starter3') %></p>
@@ -119,7 +109,6 @@
                 <strong>8 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.starter4') %></p>
@@ -128,7 +117,6 @@
                 <strong>10 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.starter5') %></p>
@@ -137,7 +125,6 @@
                 <strong>10 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.starter6') %></p>
@@ -146,7 +133,6 @@
                 <strong>23 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.soup1') %></p>
@@ -155,7 +141,6 @@
                 <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.soup2') %></p>
@@ -164,7 +149,6 @@
                 <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.soup3') %></p>
@@ -173,7 +157,6 @@
                 <small>entrée: </small><strong>12 Frs</strong><small>  plat: </small><strong>23 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.salad1') %></p>
@@ -182,7 +165,6 @@
                 <small>entrée: </small><strong>14 Frs</strong><small>  plat: </small><strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.salad2') %></p>
@@ -191,7 +173,6 @@
                 <small>entrée: </small><strong>14 Frs</strong><small>  plat: </small><strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.salad3') %></p>
@@ -202,7 +183,6 @@
             </div>
           </div>
         </div>
-
         <div class="tab-pane fade" id="pills-plats" role="tabpanel" aria-labelledby="pills-plats-tab">
           <div class="menu-grid">
             <div class="card-menu">
@@ -213,7 +193,6 @@
                 <strong>26 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main2') %></p>
@@ -222,7 +201,6 @@
                 <strong>26 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main3') %></p>
@@ -231,7 +209,6 @@
                 <strong>26 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main4') %></p>
@@ -240,7 +217,6 @@
                 <strong>25 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main5') %></p>
@@ -249,7 +225,6 @@
                 <strong>25 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main6') %></p>
@@ -258,7 +233,6 @@
                 <strong>25 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main7') %></p>
@@ -267,7 +241,6 @@
                 <strong>25 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main8') %></p>
@@ -276,7 +249,6 @@
                 <strong>25 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main9') %></p>
@@ -285,7 +257,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main10') %></p>
@@ -294,7 +265,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main11') %></p>
@@ -303,7 +273,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main12') %></p>
@@ -312,7 +281,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main13') %></p>
@@ -321,7 +289,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main14') %></p>
@@ -330,7 +297,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main15') %></p>
@@ -339,7 +305,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main16') %></p>
@@ -348,7 +313,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main17') %></p>
@@ -357,7 +321,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main18') %></p>
@@ -366,7 +329,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main19') %></p>
@@ -375,7 +337,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main20') %></p>
@@ -384,7 +345,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main21') %></p>
@@ -393,7 +353,6 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.main22') %></p>
@@ -402,10 +361,8 @@
                 <strong>27 Frs</strong>
               </div>
             </div>
-
           </div>
         </div>
-
         <div class="tab-pane fade" id="pills-accompagnements" role="tabpanel" aria-labelledby="pills-accompagnements-tab">
           <div class="menu-grid">
             <div class="card-menu">
@@ -416,7 +373,6 @@
                 <strong>28 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle2') %></p>
@@ -425,7 +381,6 @@
                 <strong>26 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle3') %></p>
@@ -434,7 +389,6 @@
                 <small>small: </small><strong>8 Frs</strong><small>  large: </small><strong>16 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle4') %></p>
@@ -443,7 +397,6 @@
                 <strong>26 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle5') %></p>
@@ -452,7 +405,6 @@
                 <strong>26 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle6') %></p>
@@ -461,7 +413,6 @@
                 <strong>3 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle7') %></p>
@@ -470,7 +421,6 @@
                 <strong>5 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.noodle8') %></p>
@@ -481,7 +431,6 @@
             </div>
           </div>
         </div>
-
         <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-desserts-tab">
           <div class="menu-grid">
             <div class="card-menu">
@@ -492,7 +441,6 @@
                 <strong>9 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.dessert2') %></p>
@@ -501,7 +449,6 @@
                 <strong>12 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.dessert3') %></p>
@@ -510,7 +457,6 @@
                 <strong>8 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.dessert4') %></p>
@@ -519,7 +465,6 @@
                 <strong>8 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.dessert5') %></p>
@@ -528,7 +473,6 @@
                 <strong>7 Frs</strong>
               </div>
             </div>
-
             <div class="card-menu">
               <div class="card-content">
                 <p><%= t('s3.menu.dessert6') %></p>
@@ -537,61 +481,48 @@
                 <strong>3.50 Frs</strong>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-    <div class="reservation-link text-center">
-      <%= link_to t('s3.menu.btn'), new_reservation_path, class: "btn-reservation-home btn-white" %>
+    <div class="reservation-link text-center mt-5">
+      <%= link_to t('s1.btn'), new_reservation_path, class: "btn-reservation-home" %>
     </div>
   </div>
 </div>
-
 <div class="img-separator">
   <%= image_tag 'coast.png' %>
 </div>
-
-<div class="contact-section">
-  <div class="row mt-5">
-    <div class=" col-sm-12 col-md-6 justify-content-center">
-      <div class="info-window">
-
-        <div class="window-title text-center">
-          <h2><%= t('s4.info.title') %></h2>
+<div class="contact-section" id="contact">
+  <div class="row">
+    <div class=" col-sm-12 col-md-6 d-flex flex-column justify-content-center info-window">
+      <div class="window-title text-center mb-3">
+        <h2><%= t('s4.info.title') %></h2>
+      </div>
+      <div class="info-contact mt-3">
+        <div class="phone d-flex flex-row justify-content-center">
+          <i class="fas fa-phone"></i>
+          <p>+41.22.792.19.00</p>
         </div>
-
-        <div class="info-contact">
-          <div class="address d-flex flex-row">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
-          </div>
-          <div class="phone d-flex flex-row">
-            <i class="fas fa-phone"></i>
-            <p>+41.22.792.19.00</p>
-          </div>
-          <div class="mail d-flex flex-row">
-            <i class="far fa-envelope"></i>
-            <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="mail-contact" href="mailto:contact@tabledesartisans.ch">contact@tabledesartisans.ch</a>
-          </div>
+        <div class="address d-flex flex-row justify-content-center">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>rue du Gaudy-le-Fort 14, 1213 Onex</p>
         </div>
-
-        <div class="info-opening">
-          <ul>
-            <li class="list-item d-flex justify-content-between mb-1">
-              <p><%= t('s4.info.week1') %></p>
-              <p>12H - 14H30</p>
-            </li>
-            <li class="list-item d-flex justify-content-between mb-5">
-              <p><%= t('s4.info.week2') %></p>
-              <p>19H - 23H</p>
-            </li>
-          </ul>
+        <div class="mail d-flex flex-row justify-content-center">
+          <i class="far fa-envelope"></i>
+          <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="mail-contact" href="mailto:contact@tabledesartisans.ch">contact@tabledesartisans.ch</a>
         </div>
-
+      </div>
+      <div class="info-opening mt-5">
+        <div class="lunch text-center">
+          <p><%= t('s4.info.week1') %></p>
+        </div>
+        <div class="dinner text-center">
+          <p><%= t('s4.info.week2') %></p>
+        </div>
       </div>
     </div>
-    <div class=" col-sm-12 col-md-6 justify-content-center">
+    <div class=" col-sm-12 col-md-6 d-flex justify-content-center map" >
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.429257521167!2d6.097866650945921!3d46.182015993177515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0805a3879d47302!2sLa+Table+des+Artisans+-+Restaurant+Tha%C3%AF!5e0!3m2!1sfr!2sfr!4v1554471937689!5m2!1sfr!2sfr" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>

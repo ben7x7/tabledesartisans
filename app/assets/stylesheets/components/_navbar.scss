@@ -11,3 +11,22 @@
 .navbar-thai .navbar-brand img {
   height: 40px;
 }
+
+.navbar-expand-lg.navbar-nav.navbar-link a {
+  padding-right: 50px !important;
+  letter-spacing: 2px !important;
+  :hover {
+    color: $orange !important;
+  }
+}
+
+#nav-resa {
+  color: $orange !important;
+}
+
+#nav-resa,
+#nav-menu,
+#nav-contact {
+  padding-right: 50px;
+  letter-spacing: 2px;
+}

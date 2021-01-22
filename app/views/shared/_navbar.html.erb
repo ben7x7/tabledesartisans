@@ -8,13 +8,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to t('link.reservation'), new_reservation_path, class: "nav-link"  %>
+        <%= link_to t('link.reservation'), new_reservation_path, class: "nav-link", id:"nav-resa"  %>
       </li>
       <li class="nav-item">
-        <%= link_to t('link.menu'), root_path(anchor: 'menu') ,  class: "nav-link" %>
+        <%= link_to t('link.menu'), root_path(anchor: 'menu') ,  class: "nav-link", id:"nav-menu" %>
       </li>
       <li class="nav-item">
-        <%= link_to t('link.contact'), root_path(anchor: 'contact') ,  class: "nav-link" %>
+        <%= link_to t('link.contact'), root_path(anchor: 'contact') ,  class: "nav-link", id:"nav-contact" %>
       </li>
       <li class="nav-item">
         <%= link_to image_tag('flag-fr.png'), url_for(locale: 'fr') %>
