@@ -36,7 +36,8 @@ gem 'simple_form'
 gem 'cookies_eu'
 gem 'mail_form'
 
-group :development, :test do  gem 'pry-byebug'
+group :development, :test do
+  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
 

@@ -29,3 +29,12 @@ p#title-subheader {
   color: red;
   font-weight: bold;
 }
+
+.invalidata {
+  background-color: $red;
+}
+
+.validata {
+  background-color: $green;
+  font-weight: bold;
+}
